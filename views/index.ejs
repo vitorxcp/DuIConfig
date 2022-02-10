@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!--<link rel="Stylesheet" type="text/css" href="https://loritta.website/v2/assets/css/style.css?hash=1052bbcd202b7cc11a91f12c4ca6a394">-->
+        <link rel="Stylesheet" type="text/css" href="/v3/style.css">
+    <script src="https://duiconfig.glitch.me/duiconfigjs/v2.js" type="text/javascript"></script>
+
+    <script src="https://loritta.website/v2/assets/js/app.js?hash=4455381bcaf2ad083fe5bd277c599deb" type="text/javascript"></script>
+    <!--<script src="https://duiconfig.glitch.me/v1/javascript.js" type="text/javascript"></script>-->
+   <title>DuiConfig - Apenas Um Bot Para O Discord.</title>
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/552086755956883456/61f9ab8994e1a9d2e7dc6e0acbe00660.png?size=2048">
+      <meta content="WebSite • DuiConfig." property="og:site_name">
+    <meta content="Veja o mais novo e atualizado website do DuiConfig!" property="og:description">
+    <meta content="DuiConfig - Apenas Um Bot Para Discord." property="og:title">
+  <meta name="author" content="Jeferson Vitor Gameplay">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta property="og:ttl" content="600">
+<meta property="og:image:width" content="320">
+<meta name="theme-color" content="#00c1df">
+    <meta content="600" property="og:ttl">
+    <meta content="https://cdn.discordapp.com/avatars/552086755956883456/61f9ab8994e1a9d2e7dc6e0acbe00660.png?size=2048" property="og:image">
+  </head>
+  <boby style="background-color: #2c2f33">
+  <nav class="navigation-bar fixed animated fade-in-right one-second4" id="navigation-bar" style="margin-top: 10px;margin-bottom: 10px;border-radius: 20px;margin-left: 5px;" >
+<div class="left-side-entries">
+<div class="entry loritta-navbar-logo"><a href="/" class="home-page" style="font-family: 'Pacifico', cursive; text-transform: none;" data-enable-link-preload="true" data-preload-activated="true">DuiConfig</a></div>
+<div class="entry"><a href="/suporte" class="support" data-enable-link-preload="true" data-sweet-page="support" data-preload-activated="true"><i class="fab fa-discord"></i> Suporte</a></div>
+<div class="entry"><a href="/comandos" class="support" data-enable-link-preload="true" data-sweet-page="commands" data-preload-activated="true"><i class="fas fa-terminal"></i> Comandos</a></div>
+<div class="entry"><a href="/" class="support" data-enable-link-preload="true" data-sweet-page="commands" data-preload-activated="true">Horas: <a id = "horasID"></a></a></div>
+
+<div class="right-side-entries">
+<!--<div class="entry"><a class="theme-changer" id="theme-changer-button"><i class="fas fa-moon"></i></a></div>
+<!--<div class="entry" id="locale-changer-button" style="cursor: default;"> pt-br <i class="fas fa-chevron-down" style="opacity: 0.7;"></i>
+<div id="languages"><div><a href="/br/">Português</a></div><hr><div><a href="/us/">English</a></div></div>
+</div>-->
+    <% if (logged) { %>
+      <style>
+      a2 {
+        padding:0px 10px;
+        color:white;
+        border:0px;
+       height:0em;
+         font-size:15px
+      }
+  </style>
+      <div class="entry class="entry loritta-navbar-logo"" >
+<a href="/sair" id="login-button"><img src="<%=avatarurl%>" style="    font-size: 0px;
+    line-height: 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 3px;
+    border-radius: 100%;"><div style="    font-size: 0px;
+    line-height: 0px;
+    width: 40px;
+    visibility: hidden;
+    height: 0px;
+    display: inline-block;"></div> <a2>
+  <strong style="padding-left: 4px;"> <%= username%>#<%=descrim%></strong>
+  </a2></a>
+  </div>
+
+    <% } else { %>
+    <div class="entry">
+<a href="/login" id="login-button"><i class="fas fa-sign-in-alt"></i>Login</a>
+</div>
+    <% } %>
+
+<div class="entry" id="hamburger-menu-button" style="display: block;"><i class="fas fa-bars"></i></div>
+</div>
+</nav>
+    <div class="dummy-navigation-bar" id="dummy-navbar" style="height: 10px;"></div>
+<div id="content">
+  <div id="right-side-text">
+      
+    </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <style>
+.col-4 {
+      position: relative;
+    width: 10%;
+
+  height: 10px;
+}
+      .one-second {
+    -webkit-animation-duration: 2s;
+    animation-duration: 20s;
+}
+        .one-second2 {
+    -webkit-animation-duration: 20s;
+    animation-duration: 5s;
+}
+       .one-second3 {
+    -webkit-animation-duration: 20s;
+    animation-duration: 8s;
+}
+             .one-second4 {
+    -webkit-animation-duration: 20s;
+    animation-duration: 3s;
+}
+.animated {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fade-in-right {
+    -webkit-animation-name: fade-in-right;
+    animation-name: fade-in-right;
+}
+       .introduction {
+    font-family: Pacifico,cursive;
+    color: #fff;
+    text-shadow: 0 0 25px #000000;
+    line-height: 1.25;
+}
+       .right-side-text {
+    position: absolute;
+    right: 3.5vw;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: right;
+      }
+       .introduction .loritta {
+    font-size: 7.5em;
+    color:#02cef9bd;
+    </style>
+    <center>
+      <div id="jumbotron">
+<div class="bouncy-arrow"><i class="fas fa-chevron-down"></i></div>      <div class="right-side-text">
+              <div class="introduction">
+        <div class="loritta animated fade-in-right one-second2">DuiConfig</div>
+                <div class="tagline animated fade-in-right one-second2">BOT</div>
+                   <div class="buttons animated fade-in-right one-second3" >
+      <div><a href="https://discordapp.com/oauth2/authorize?client_id=777936158638342175&permissions=8&scope=bot" class="add-me button blue has-shadow is-big"><img  class="lori-happy"><i class="fas fa-plus"></i> Me adicione!</a>
+</div>
+      </div>
+      </div>
+      </div>  
+        
+      </div>
+
+
+      <br>
+      <h1>
+        Discord Bot List:
+      </h1>
+      <hr style="width: 40%">
+      <br>
+    </center>
+    <center class="my-name-is animated fade-in-right one-second">
+       <script src="https://discordbotlist.com/widget/index.js" async></script>
+<dbl-widget bot-id="bot-duiconfig">Carregando...</dbl-widget>
+      </center>
+<br>
+  </boby>
+</html>
