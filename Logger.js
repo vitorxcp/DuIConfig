@@ -8,8 +8,6 @@ class Logger {
       transports: [new winston.transports.File({ filename: LoggingFile })],
     });
   }
-
-
   log(Text) {
     let d = new Date();
 		 this.logger.log({
